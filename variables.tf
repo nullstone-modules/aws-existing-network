@@ -1,11 +1,19 @@
 variable "name" {
   type    = string
-  default = ""
+  description = <<EOF
+The Name of the VPC to match.
+At least one filter is required: `id`, `name`.
+Specifying both is not desired; the module will attempt to filter on both values.
+EOF
 }
 
 variable "id" {
   type    = string
-  default = ""
+  description = <<EOF
+The ID of the VPC to match.
+At least one filter is required: `id`, `name`.
+Specifying both is not desired; the module will attempt to filter on both values.
+EOF
 }
 
 locals {
