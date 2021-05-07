@@ -38,7 +38,7 @@ output "intra_cidrs" {
   description = "list(string) ||| "
 }
 
-//output "internal_zone_id" {
-//  value       = aws_route53_zone.internal.zone_id
-//  description = "string ||| "
-//}
+output "service_discovery_id" {
+  value       = aws_service_discovery_private_dns_namespace.service.id
+  description = "string ||| AWS ID for the Private DNS namespace created for this cluster."
+}
