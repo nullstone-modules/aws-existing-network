@@ -1,6 +1,5 @@
 variable "id" {
   type        = string
-  default     = ""
   description = <<EOF
 The ID of the VPC to match.
 EOF
