@@ -3,11 +3,6 @@ variable "id" {
   description = <<EOF
 The ID of the VPC to match.
 EOF
-
-  validation {
-    condition     = length(var.id) < 1
-    error_message = "VPC ID is required."
-  }
 }
 
 variable "service_namespace" {
