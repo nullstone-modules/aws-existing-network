@@ -6,7 +6,7 @@ EOF
 
   validation {
     condition     = length(var.id) < 1
-    error_message = "VPC ID is required"
+    error_message = "VPC ID is required."
   }
 }
 
