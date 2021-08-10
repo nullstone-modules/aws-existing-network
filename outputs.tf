@@ -40,5 +40,10 @@ output "intra_cidrs" {
 
 output "service_discovery_id" {
   value       = aws_service_discovery_private_dns_namespace.service.id
-  description = "string ||| AWS ID for the Private DNS namespace created for this cluster."
+  description = "string ||| AWS ID for the Private DNS namespace created in this network."
+}
+
+output "service_discovery_name" {
+  value       = aws_service_discovery_private_dns_namespace.service.name
+  description = "string ||| The root TLD for the Private DNS namespace created in this network."
 }
