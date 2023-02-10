@@ -1,0 +1,13 @@
+org_name: nullstone
+name: aws-existing-network
+friendly_name: Existing Network
+description: Produces outputs that match aws-network contract from an existing VPC
+category: network
+subcategory: ""
+provider_types:
+    - aws
+platform: vpc
+subplatform: ""
+type: ""
+appCategories: []
+is_public: true
