@@ -4,8 +4,11 @@
 provider "registry.terraform.io/hashicorp/aws" {
   version = "4.54.0"
   hashes = [
+    "h1:8F5YQIE6YgG9+THTQv/m9utVEch0GwI4+vi0bmKKmpA=",
     "h1:CvZ2TNI0ImPJN1xxCCZsrU5mEQXcyfPcEWM7u7tMfPs=",
+    "h1:eiPVhVhAawhvnZIwtRRM4y7UpfWSJpYXFHwml1M2LB0=",
     "h1:gr0Xlk9orKv2lMVbyGpiPHdBpyQzTblOqto3JF517DQ=",
+    "h1:j/L01+hlHVM2X2VrkQC2WtMZyu4ZLhDMw+HDJ7k0Y2Q=",
     "zh:24358aefc06b3f38878680fe606dab2570cb58ab952750c47e90b81d3b05e606",
     "zh:3fc0ef459d6bb4fbb0e4eb7b8adadddd636efa6d975be6e70de7327d83e15729",
     "zh:67e765119726f47b1916316ac95c3cd32ac074b454f2a67b6127120b476bc483",
@@ -27,8 +30,11 @@ provider "registry.terraform.io/hashicorp/aws" {
 provider "registry.terraform.io/hashicorp/null" {
   version = "3.2.1"
   hashes = [
+    "h1:FbGfc+muBsC17Ohy5g806iuI1hQc4SIexpYCrQHQd8w=",
     "h1:tSj1mL6OQ8ILGqR2mDu7OYYYWf+hoir0pf9KAQ8IzO8=",
     "h1:vUW21lLLsKlxtBf0QF7LKJreKxs0CM7YXGzqW1N/ODY=",
+    "h1:wqgRvlyVIbkCeCQs+5jj6zVuQL0KDxZZtNofGqqlSdI=",
+    "h1:ydA0/SNRVB1o95btfshvYsmxA+jZFRZcvKzZSB+4S1M=",
     "zh:58ed64389620cc7b82f01332e27723856422820cfd302e304b5f6c3436fb9840",
     "zh:62a5cc82c3b2ddef7ef3a6f2fedb7b9b3deff4ab7b414938b08e51d6e8be87cb",
     "zh:63cff4de03af983175a7e37e52d4bd89d990be256b16b5c7f919aff5ad485aa5",
@@ -47,8 +53,11 @@ provider "registry.terraform.io/hashicorp/null" {
 provider "registry.terraform.io/hashicorp/random" {
   version = "3.4.3"
   hashes = [
+    "h1:hV66lcagXXRwwCW3Y542bI1JgPo8z/taYKT7K+a2Z5U=",
     "h1:hXUPrH8igYBhatzatkp80RCeeUJGu9lQFDyKemOlsTo=",
+    "h1:saZR+mhthL0OZl4SyHXZraxyaBNVMxiZzks78nWcZ2o=",
     "h1:tL3katm68lX+4lAncjQA9AXL4GR/VM+RPwqYf4D2X8Q=",
+    "h1:xZGZf18JjMS06pFa4NErzANI98qi59SEcBsOcS2P2yQ=",
     "zh:41c53ba47085d8261590990f8633c8906696fa0a3c4b384ff6a7ecbf84339752",
     "zh:59d98081c4475f2ad77d881c4412c5129c56214892f490adf11c7e7a5a47de9b",
     "zh:686ad1ee40b812b9e016317e7f34c0d63ef837e084dea4a1f578f64a6314ad53",
@@ -67,7 +76,10 @@ provider "registry.terraform.io/hashicorp/random" {
 provider "registry.terraform.io/nullstone-io/ns" {
   version = "0.6.13"
   hashes = [
+    "h1:6u8nioR3BQfmqk9Q8vFfR1iEcyvTjToKyPct7uZCPbk=",
     "h1:7HNm+ffZ5bAd4bdw+DG+oJgQ/NVYRn5leidyMot91DE=",
+    "h1:P8EHXu/GoPb9FSSe9dRY5CrTl48Vflgn4nEfmtN6E8A=",
+    "h1:ZB0tan6PHUYnzLXz/5oq0uRLBttu+8cTv0cGuDhBzqE=",
     "h1:s8zJTF8ngWlEOj8ZDirPGFxoa2CpHE2BA2Ps58BL8W0=",
     "zh:06478787202d592ec601c626a7ebd2326f2cd644bfb6ecb517a5267404870625",
     "zh:0b94635652840432f0eb599516a96b35f5ac77211728fcf36e8ee73fc6a0f095",
