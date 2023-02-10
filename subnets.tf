@@ -1,9 +1,12 @@
-data "aws_subnet_ids" "all" {
-  vpc_id = data.aws_vpc.this.id
+data "aws_subnets" "all" {
+  filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.this.id]
+  }
 }
 
 data "aws_subnet" "each" {
-  for_each = data.aws_subnet_ids.all.ids
+  for_each = toset(data.aws_subnets.all.ids)
   id       = each.value
 }
 
@@ -27,7 +30,7 @@ locals {
     nat_gateway_id = rt.nat_gateway_id
     subnet_id      = subnet_id
   }]])
-  all_subnet_ids  = flatten(data.aws_subnet_ids.all.*.ids)
+  all_subnet_ids  = data.aws_subnets.all.ids
   public_subnets  = toset(compact([for rt in local.routes : (rt.gateway_id != "" ? rt.subnet_id : "")]))
   private_subnets = toset(compact([for rt in local.routes : (rt.nat_gateway_id != "" ? rt.subnet_id : "")]))
   intra_subnets   = setsubtract(setsubtract(local.all_subnet_ids, local.public_subnets), local.private_subnets)
