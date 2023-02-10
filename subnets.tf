@@ -9,7 +9,7 @@ data "aws_route_tables" "all" {
   for_each = toset(data.aws_subnets.all.ids)
   filter {
     name   = "association.subnet-id"
-    values = [each.value.id]
+    values = [each.value]
   }
 }
 
