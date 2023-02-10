@@ -6,7 +6,7 @@ data "aws_subnets" "all" {
 }
 
 data "aws_subnet" "each" {
-  for_each = data.aws_subnets.all.ids
+  for_each = toset(data.aws_subnets.all.ids)
   id       = each.value
 }
 
