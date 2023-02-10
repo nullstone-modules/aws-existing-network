@@ -5,13 +5,8 @@ data "aws_subnets" "all" {
   }
 }
 
-data "aws_subnet" "each" {
-  for_each = toset(data.aws_subnets.all.ids)
-  id       = each.value
-}
-
 data "aws_route_tables" "all" {
-  for_each = data.aws_subnet.each
+  for_each = toset(data.aws_subnets.all.ids)
   filter {
     name   = "association.subnet-id"
     values = [each.value.id]
