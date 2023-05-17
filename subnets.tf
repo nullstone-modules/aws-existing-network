@@ -14,8 +14,8 @@ data "aws_route_tables" "all" {
 }
 
 data "aws_route_table" "all" {
-  for_each       = data.aws_route_tables.all
-  route_table_id = tolist(each.value.ids)[0]
+  for_each       = { for subnet_id, rtbs in data.aws_route_tables.all : subnet_id => rtbs.ids if length(rtbs.ids) > 0 }
+  route_table_id = tolist(each.value)[0]
 }
 
 locals {
